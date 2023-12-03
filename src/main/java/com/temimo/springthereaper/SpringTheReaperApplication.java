@@ -8,9 +8,10 @@ public class SpringTheReaperApplication {
 
     public static void main(String[] args) throws InterruptedException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        while (true) {
-            Thread.sleep(100);
-            context.getBean(Quoter.class).sayQuote();
-        }
+//        while (true) {
+//            Thread.sleep(100);
+//            context.getBean(Quoter.class).sayQuote();
+//        }
+        context.getBean(Quoter.class).sayQuote();
     }
 }
